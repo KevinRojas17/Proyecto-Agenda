@@ -1,0 +1,19 @@
+public void generaArchivo(){//InicioguardaPalabras
+        
+    File archivo = new File ("Contactos.txt");
+    
+    try{//Inicio try
+        
+    FileOutputStream fos = new FileOutputStream(archivo);
+    
+    PrintStream ps = new PrintStream(fos);
+   
+    }//Fin try
+    
+    catch(FileNotFoundException fnfe){//Inicio catch
+        
+    JOptionPane.showMessageDialog(null,"Problemas al escribir en el archivo");
+        
+    }//Fin catch
+        
+    }//Fin generaArchivo
